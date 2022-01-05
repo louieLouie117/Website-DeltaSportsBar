@@ -262,7 +262,7 @@ main h2 {
 
 .item-container p:last-child {
   text-align: right;
-  font: 1.6em sans-serif;
+  font: 1em sans-serif;
   margin: 0;
   padding-bottom: 5px;
 }
