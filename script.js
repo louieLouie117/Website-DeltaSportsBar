@@ -558,22 +558,292 @@ var appetizerItem15V;
 
 
 
+const AppetizerMenuHandler = (e) =>{
+    console.log(e.target.innerText)
+    if(e.target.innerText === "Delta Indian Roll"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "block";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Spinach & Artichoke Dip"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "block";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "BBQ Pulled Pork Nachos"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "block";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "BBQ Pulled Pork Sliders"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "block";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+    
+    if(e.target.innerText === "Mozzarella Sticks"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "block";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Onion Rings"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "block";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+    
+
+    if(e.target.innerText === "Potato Skins"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "block";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+
+    if(e.target.innerText === "Jalapeno Poppers"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "block";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Stuffed Mushrooms"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "block";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Calamari"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "block";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Chicken Wings"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "block";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Chicken Tenders"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "block";
+        document.getElementById("FrenchFriesInfo").style.display = "none";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+    
+    if(e.target.innerText === "French Fries"){
+        document.getElementById("DeltaIndianRollInfo").style.display = "none";
+        document.getElementById("SpinachArtichokeDipInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkNachosInfo").style.display = "none";
+        document.getElementById("BBQPulledPorkSlidersInfo").style.display = "none";
+        document.getElementById("MozzarellaSticksInfo").style.display = "none";
+        document.getElementById("OnionRingsInfo").style.display = "none";
+        document.getElementById("PotatoSkinsInfo").style.display = "none";
+        document.getElementById("JalapenoPoppersInfo").style.display = "none";
+        document.getElementById("StuffedMushroomsInfo").style.display = "none";
+        document.getElementById("CalamariInfo").style.display = "none";
+        document.getElementById("ChickenWingsInfo").style.display = "none";
+        document.getElementById("ChickenTendersInfo").style.display = "none";
+        document.getElementById("FrenchFriesInfo").style.display = "block";
+        document.getElementById("appetizerItem14Info").style.display = "none";
+        document.getElementById("appetizerItem15Info").style.display = "none";
+
+
+    }
+
+
+    
+    
+}
 //event listeners------>
-document.getElementById("appetizerItem1").addEventListener("click", showAppetizerItem1);
-document.getElementById("appetizerItem2").addEventListener("click", showAppetizerItem2);
-document.getElementById("appetizerItem3").addEventListener("click", showAppetizerItem3);
-document.getElementById("appetizerItem4").addEventListener("click", showAppetizerItem4);
-document.getElementById("appetizerItem5").addEventListener("click", showAppetizerItem5);
-document.getElementById("appetizerItem6").addEventListener("click", showAppetizerItem6);
-document.getElementById("appetizerItem7").addEventListener("click", showAppetizerItem7);
-document.getElementById("appetizerItem8").addEventListener("click", showAppetizerItem8);
-document.getElementById("appetizerItem9").addEventListener("click", showAppetizerItem9);
-document.getElementById("appetizerItem10").addEventListener("click", showAppetizerItem10);
-document.getElementById("appetizerItem11").addEventListener("click", showAppetizerItem11);
-document.getElementById("appetizerItem12").addEventListener("click", showAppetizerItem12);
-document.getElementById("appetizerItem13").addEventListener("click", showAppetizerItem13);
-document.getElementById("appetizerItem14").addEventListener("click", showAppetizerItem14);
-document.getElementById("appetizerItem15").addEventListener("click", showAppetizerItem15);
+document.getElementById("AppetizerDeltaIndianRoll").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerSpinachArtichokeDip").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerBBQPulledPorkNachos").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerBBQPulledPorkSliders").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerMozzarellaSticks").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerOnionRings").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerPotatoSkins").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerJalapenoPoppers").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerStuffedMushrooms").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerCalamari").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerChickenWings").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerChickenTenders").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("AppetizerFrenchFries").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("appetizerItem14").addEventListener("click", AppetizerMenuHandler);
+document.getElementById("appetizerItem15").addEventListener("click", AppetizerMenuHandler);
 
 
 
