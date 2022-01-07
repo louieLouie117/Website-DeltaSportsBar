@@ -38,6 +38,8 @@ body  ::-webkit-scrollbar{
 
 header {
   display: grid;
+  height: 100vh;
+  overflow: scroll;
 }
 
 header a {
@@ -292,7 +294,9 @@ main h2 {
 #sandwichItem1Info,
 #saladItem1Info,
 #burgerItem1Info,
-#appetizerItem1Info {
+#appetizerItem1Info,
+#PrimeRibDipInfo,
+#CheeseLoversInfo {
   display: block;
 }
 

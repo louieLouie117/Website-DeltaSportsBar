@@ -248,14 +248,153 @@ document.getElementById("PizzaBuildYourOwn").addEventListener("click", PizzaMenu
 
 
 //Sandwiches items----------------------------------------------------->
-var sandwichItem1V;
-var sandwichItem2V;
-var sandwichItem3V;
-var sandwichItem4V;
-var sandwichItem5V;
-var sandwichItem6V;
-var sandwichItem7V;
 
+const SandwichesMenuHandler = (e) =>{
+    console.log(e.target.innerText)
+    if(e.target.innerText === "Prime Rib Dip"){
+        document.getElementById("PrimeRibDipInfo").style.display = "block";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "none";
+        document.getElementById("DeltaBLTInfo").style.display = "none";
+        document.getElementById("DeltaClubInfo").style.display = "none";
+        document.getElementById("RubenInfo").style.display = "none";
+        document.getElementById("BaconRanchChickenInfo").style.display = "none";
+        document.getElementById("sandwichItem7Info").style.display = "none";
+        document.getElementById("FishChipsInfo").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Delta Cheese Steak"){
+        document.getElementById("PrimeRibDipInfo").style.display = "none";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "block";
+        document.getElementById("DeltaBLTInfo").style.display = "none";
+        document.getElementById("DeltaClubInfo").style.display = "none";
+        document.getElementById("RubenInfo").style.display = "none";
+        document.getElementById("BaconRanchChickenInfo").style.display = "none";
+        document.getElementById("sandwichItem7Info").style.display = "none";
+        document.getElementById("TurkeyBaconAvocadoWrapInfo").style.display = "none";
+        document.getElementById("FriedShrimpBasketInfo").style.display = "none";
+        document.getElementById("FishChipsInfo").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Delta BLT"){
+        document.getElementById("PrimeRibDipInfo").style.display = "none";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "none";
+        document.getElementById("DeltaBLTInfo").style.display = "block";
+        document.getElementById("DeltaClubInfo").style.display = "none";
+        document.getElementById("RubenInfo").style.display = "none";
+        document.getElementById("BaconRanchChickenInfo").style.display = "none";
+        document.getElementById("sandwichItem7Info").style.display = "none";
+        document.getElementById("TurkeyBaconAvocadoWrapInfo").style.display = "none";
+        document.getElementById("FriedShrimpBasketInfo").style.display = "none";
+        document.getElementById("FishChipsInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Delta Club"){
+        document.getElementById("PrimeRibDipInfo").style.display = "none";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "none";
+        document.getElementById("DeltaBLTInfo").style.display = "none";
+        document.getElementById("DeltaClubInfo").style.display = "block";
+        document.getElementById("RubenInfo").style.display = "none";
+        document.getElementById("BaconRanchChickenInfo").style.display = "none";
+        document.getElementById("RibeyeSteakInfo").style.display = "none";
+        document.getElementById("TurkeyBaconAvocadoWrapInfo").style.display = "none";
+        document.getElementById("FriedShrimpBasketInfo").style.display = "none";
+        document.getElementById("FishChipsInfo").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Ruben"){
+        document.getElementById("PrimeRibDipInfo").style.display = "none";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "none";
+        document.getElementById("DeltaBLTInfo").style.display = "none";
+        document.getElementById("DeltaClubInfo").style.display = "none";
+        document.getElementById("RubenInfo").style.display = "block";
+        document.getElementById("BaconRanchChickenInfo").style.display = "none";
+        document.getElementById("RibeyeSteakInfo").style.display = "none";
+        document.getElementById("TurkeyBaconAvocadoWrapInfo").style.display = "none";
+        document.getElementById("FriedShrimpBasketInfo").style.display = "none";
+        document.getElementById("FishChipsInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Bacon & Ranch Chicken"){
+        document.getElementById("PrimeRibDipInfo").style.display = "none";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "none";
+        document.getElementById("DeltaBLTInfo").style.display = "none";
+        document.getElementById("DeltaClubInfo").style.display = "none";
+        document.getElementById("RubenInfo").style.display = "none";
+        document.getElementById("BaconRanchChickenInfo").style.display = "block";
+        document.getElementById("RibeyeSteakInfo").style.display = "none";
+        document.getElementById("TurkeyBaconAvocadoWrapInfo").style.display = "none";
+        document.getElementById("FriedShrimpBasketInfo").style.display = "none";
+        document.getElementById("FishChipsInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Ribeye Steak Sandwich"){
+        document.getElementById("PrimeRibDipInfo").style.display = "none";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "none";
+        document.getElementById("DeltaBLTInfo").style.display = "none";
+        document.getElementById("DeltaClubInfo").style.display = "none";
+        document.getElementById("RubenInfo").style.display = "none";
+        document.getElementById("BaconRanchChickenInfo").style.display = "none";
+        document.getElementById("RibeyeSteakInfo").style.display = "block";
+        document.getElementById("TurkeyBaconAvocadoWrapInfo").style.display = "none";
+        document.getElementById("FriedShrimpBasketInfo").style.display = "none";
+        document.getElementById("FishChipsInfo").style.display = "none";
+
+    }
+
+    
+    if(e.target.innerText === "Turkey Bacon Avocado Wrap"){
+        document.getElementById("PrimeRibDipInfo").style.display = "none";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "none";
+        document.getElementById("DeltaBLTInfo").style.display = "none";
+        document.getElementById("DeltaClubInfo").style.display = "none";
+        document.getElementById("RubenInfo").style.display = "none";
+        document.getElementById("BaconRanchChickenInfo").style.display = "none";
+        document.getElementById("RibeyeSteakInfo").style.display = "none";
+        document.getElementById("TurkeyBaconAvocadoWrapInfo").style.display = "block";
+        document.getElementById("FriedShrimpBasketInfo").style.display = "none";
+        document.getElementById("FishChipsInfo").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Fried Shrimp Basket"){
+        document.getElementById("PrimeRibDipInfo").style.display = "none";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "none";
+        document.getElementById("DeltaBLTInfo").style.display = "none";
+        document.getElementById("DeltaClubInfo").style.display = "none";
+        document.getElementById("RubenInfo").style.display = "none";
+        document.getElementById("BaconRanchChickenInfo").style.display = "none";
+        document.getElementById("RibeyeSteakInfo").style.display = "none";
+        document.getElementById("TurkeyBaconAvocadoWrapInfo").style.display = "none";
+        document.getElementById("FriedShrimpBasketInfo").style.display = "block";
+        document.getElementById("FishChipsInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Fish & Chips"){
+        document.getElementById("PrimeRibDipInfo").style.display = "none";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "none";
+        document.getElementById("DeltaBLTInfo").style.display = "none";
+        document.getElementById("DeltaClubInfo").style.display = "none";
+        document.getElementById("RubenInfo").style.display = "none";
+        document.getElementById("BaconRanchChickenInfo").style.display = "none";
+        document.getElementById("RibeyeSteakInfo").style.display = "none";
+        document.getElementById("TurkeyBaconAvocadoWrapInfo").style.display = "none";
+        document.getElementById("FriedShrimpBasketInfo").style.display = "none";
+        document.getElementById("FishChipsInfo").style.display = "block";
+
+
+    }
+}
 
 
 
@@ -263,109 +402,24 @@ var sandwichItem7V;
 
 
 //event listeners------>
-document.getElementById("sandwichItem1").addEventListener("click", showSandwichItem1);
-document.getElementById("sandwichItem2").addEventListener("click", showSandwichItem2);
-document.getElementById("sandwichItem3").addEventListener("click", showSandwichItem3);
-document.getElementById("sandwichItem4").addEventListener("click", showSandwichItem4);
-document.getElementById("sandwichItem5").addEventListener("click", showSandwichItem5);
-document.getElementById("sandwichItem6").addEventListener("click", showSandwichItem6);
-document.getElementById("sandwichItem7").addEventListener("click", showSandwichItem7);
+document.getElementById("SandwichPrimeRibDip").addEventListener("click", SandwichesMenuHandler);
+document.getElementById("SandwichDeltaCheeseSteak").addEventListener("click", SandwichesMenuHandler);
+document.getElementById("SandwichDeltaBLT").addEventListener("click", SandwichesMenuHandler);
+document.getElementById("SandwichDeltaClub").addEventListener("click", SandwichesMenuHandler);
+document.getElementById("SandwichRuben").addEventListener("click", SandwichesMenuHandler);
+document.getElementById("SandwichBaconRanchChicken").addEventListener("click", SandwichesMenuHandler);
+document.getElementById("SandwichRibeyeSteak").addEventListener("click", SandwichesMenuHandler);
+document.getElementById("SandwichTurkeyBaconAvocadoWrap").addEventListener("click", SandwichesMenuHandler);
+document.getElementById("SandwichFriedShrimpBasket").addEventListener("click", SandwichesMenuHandler);
+document.getElementById("SandwichFishChips").addEventListener("click", SandwichesMenuHandler);
 
 
 
 
 
 
-//Functions------------>
-
-function showSandwichItem1(e) {
-    document.getElementById("sandwichItem1Info").style.display = "block";
-    document.getElementById("sandwichItem2Info").style.display = "none";
-    document.getElementById("sandwichItem3Info").style.display = "none";
-    document.getElementById("sandwichItem4Info").style.display = "none";
-    document.getElementById("sandwichItem5Info").style.display = "none";
-    document.getElementById("sandwichItem6Info").style.display = "none";
-    document.getElementById("sandwichItem7Info").style.display = "none";
 
 
-
-}
-console.log(sandwichItem1V)
-
-function showSandwichItem2(e) {
-    document.getElementById("sandwichItem1Info").style.display = "none";
-    document.getElementById("sandwichItem2Info").style.display = "block";
-    document.getElementById("sandwichItem3Info").style.display = "none";
-    document.getElementById("sandwichItem4Info").style.display = "none";
-    document.getElementById("sandwichItem5Info").style.display = "none";
-    document.getElementById("sandwichItem6Info").style.display = "none";
-    document.getElementById("sandwichItem7Info").style.display = "none";
-
-
-}
-console.log(sandwichItem2V)
-
-function showSandwichItem3(e) {
-    document.getElementById("sandwichItem1Info").style.display = "none";
-    document.getElementById("sandwichItem2Info").style.display = "none";
-    document.getElementById("sandwichItem3Info").style.display = "block";
-    document.getElementById("sandwichItem4Info").style.display = "none";
-    document.getElementById("sandwichItem5Info").style.display = "none";
-    document.getElementById("sandwichItem6Info").style.display = "none";
-    document.getElementById("sandwichItem7Info").style.display = "none";
-
-
-
-}
-
-
-
-
-function showSandwichItem4(e) {
-    document.getElementById("sandwichItem1Info").style.display = "none";
-    document.getElementById("sandwichItem2Info").style.display = "none";
-    document.getElementById("sandwichItem3Info").style.display = "none";
-    document.getElementById("sandwichItem4Info").style.display = "block";
-    document.getElementById("sandwichItem5Info").style.display = "none";
-    document.getElementById("sandwichItem6Info").style.display = "none";
-    document.getElementById("sandwichItem7Info").style.display = "none";
-
-
-
-}
-
-
-function showSandwichItem5(e) {
-    document.getElementById("sandwichItem1Info").style.display = "none";
-    document.getElementById("sandwichItem2Info").style.display = "none";
-    document.getElementById("sandwichItem3Info").style.display = "none";
-    document.getElementById("sandwichItem4Info").style.display = "none";
-    document.getElementById("sandwichItem5Info").style.display = "block";
-    document.getElementById("sandwichItem6Info").style.display = "none";
-    document.getElementById("sandwichItem7Info").style.display = "none";
-}
-
-
-function showSandwichItem6(e) {
-    document.getElementById("sandwichItem1Info").style.display = "none";
-    document.getElementById("sandwichItem2Info").style.display = "none";
-    document.getElementById("sandwichItem3Info").style.display = "none";
-    document.getElementById("sandwichItem4Info").style.display = "none";
-    document.getElementById("sandwichItem5Info").style.display = "none";
-    document.getElementById("sandwichItem6Info").style.display = "block";
-    document.getElementById("sandwichItem7Info").style.display = "none";
-}
-
-
-function showSandwichItem7(e) {
-    document.getElementById("sandwichItem1Info").style.display = "none";
-    document.getElementById("sandwichItem2Info").style.display = "none";
-    document.getElementById("sandwichItem3Info").style.display = "none";
-    document.getElementById("sandwichItem4Info").style.display = "none";
-    document.getElementById("sandwichItem5Info").style.display = "none";
-    document.getElementById("sandwichItem6Info").style.display = "none";
-    document.getElementById("sandwichItem7Info").style.display = "block";
-}
 
 
 
