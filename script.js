@@ -88,146 +88,163 @@ var pizzaItem8V;
 var pizzaItem9V;
 
 
+const PizzaMenuHandler = (e) =>{
+    console.log(e.target.innerText)
+    if(e.target.innerText === "Cheese Lovers"){
+        document.getElementById("CheeseLoversInfo").style.display = "block";
+        document.getElementById("PepperoniInfo").style.display = "none";
+        document.getElementById("HawaiianInfo").style.display = "none";
+        document.getElementById("MeatLoversInfo").style.display = "none";
+        document.getElementById("VeggieDeltaInfo").style.display = "none";
+        document.getElementById("ChickenFlorentineInfo").style.display = "none";
+        document.getElementById("CombinationInfo").style.display = "none";
+        document.getElementById("MargheritaInfo").style.display = "none";
+        document.getElementById("BBQChickenInfo").style.display = "none";
+        document.getElementById("PizzaBuildYourOwnInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Pepperoni"){
+        document.getElementById("CheeseLoversInfo").style.display = "none";
+        document.getElementById("PepperoniInfo").style.display = "block";
+        document.getElementById("HawaiianInfo").style.display = "none";
+        document.getElementById("MeatLoversInfo").style.display = "none";
+        document.getElementById("VeggieDeltaInfo").style.display = "none";
+        document.getElementById("ChickenFlorentineInfo").style.display = "none";
+        document.getElementById("CombinationInfo").style.display = "none";
+        document.getElementById("MargheritaInfo").style.display = "none";
+        document.getElementById("BBQChickenInfo").style.display = "none";
+        document.getElementById("PizzaBuildYourOwnInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Hawaiian"){
+        document.getElementById("CheeseLoversInfo").style.display = "none";
+        document.getElementById("PepperoniInfo").style.display = "none";
+        document.getElementById("HawaiianInfo").style.display = "block";
+        document.getElementById("MeatLoversInfo").style.display = "none";
+        document.getElementById("VeggieDeltaInfo").style.display = "none";
+        document.getElementById("ChickenFlorentineInfo").style.display = "none";
+        document.getElementById("CombinationInfo").style.display = "none";
+        document.getElementById("MargheritaInfo").style.display = "none";
+        document.getElementById("BBQChickenInfo").style.display = "none";
+        document.getElementById("PizzaBuildYourOwnInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Meat Lovers"){
+        document.getElementById("CheeseLoversInfo").style.display = "none";
+        document.getElementById("PepperoniInfo").style.display = "none";
+        document.getElementById("HawaiianInfo").style.display = "none";
+        document.getElementById("MeatLoversInfo").style.display = "block";
+        document.getElementById("VeggieDeltaInfo").style.display = "none";
+        document.getElementById("ChickenFlorentineInfo").style.display = "none";
+        document.getElementById("CombinationInfo").style.display = "none";
+        document.getElementById("MargheritaInfo").style.display = "none";
+        document.getElementById("BBQChickenInfo").style.display = "none";
+        document.getElementById("PizzaBuildYourOwnInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Veggie Delta"){
+        document.getElementById("CheeseLoversInfo").style.display = "none";
+        document.getElementById("PepperoniInfo").style.display = "none";
+        document.getElementById("HawaiianInfo").style.display = "none";
+        document.getElementById("MeatLoversInfo").style.display = "none";
+        document.getElementById("VeggieDeltaInfo").style.display = "block";
+        document.getElementById("ChickenFlorentineInfo").style.display = "none";
+        document.getElementById("CombinationInfo").style.display = "none";
+        document.getElementById("MargheritaInfo").style.display = "none";
+        document.getElementById("BBQChickenInfo").style.display = "none";
+        document.getElementById("PizzaBuildYourOwnInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Chicken Florentine"){
+        document.getElementById("CheeseLoversInfo").style.display = "none";
+        document.getElementById("PepperoniInfo").style.display = "none";
+        document.getElementById("HawaiianInfo").style.display = "none";
+        document.getElementById("MeatLoversInfo").style.display = "none";
+        document.getElementById("VeggieDeltaInfo").style.display = "none";
+        document.getElementById("ChickenFlorentineInfo").style.display = "block";
+        document.getElementById("CombinationInfo").style.display = "none";
+        document.getElementById("MargheritaInfo").style.display = "none";
+        document.getElementById("BBQChickenInfo").style.display = "none";
+        document.getElementById("PizzaBuildYourOwnInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Combination"){
+        document.getElementById("CheeseLoversInfo").style.display = "none";
+        document.getElementById("PepperoniInfo").style.display = "none";
+        document.getElementById("HawaiianInfo").style.display = "none";
+        document.getElementById("MeatLoversInfo").style.display = "none";
+        document.getElementById("VeggieDeltaInfo").style.display = "none";
+        document.getElementById("ChickenFlorentineInfo").style.display = "none";
+        document.getElementById("CombinationInfo").style.display = "block";
+        document.getElementById("MargheritaInfo").style.display = "none";
+        document.getElementById("BBQChickenInfo").style.display = "none";
+        document.getElementById("PizzaBuildYourOwnInfo").style.display = "none";
+
+    }
+    
+    if(e.target.innerText === "Margherita"){
+        document.getElementById("CheeseLoversInfo").style.display = "none";
+        document.getElementById("PepperoniInfo").style.display = "none";
+        document.getElementById("HawaiianInfo").style.display = "none";
+        document.getElementById("MeatLoversInfo").style.display = "none";
+        document.getElementById("VeggieDeltaInfo").style.display = "none";
+        document.getElementById("ChickenFlorentineInfo").style.display = "none";
+        document.getElementById("CombinationInfo").style.display = "none";
+        document.getElementById("MargheritaInfo").style.display = "block";
+        document.getElementById("BBQChickenInfo").style.display = "none";
+        document.getElementById("PizzaBuildYourOwnInfo").style.display = "none";
+
+    }
+    if(e.target.innerText === "BBQ Chicken"){
+        document.getElementById("CheeseLoversInfo").style.display = "none";
+        document.getElementById("PepperoniInfo").style.display = "none";
+        document.getElementById("HawaiianInfo").style.display = "none";
+        document.getElementById("MeatLoversInfo").style.display = "none";
+        document.getElementById("VeggieDeltaInfo").style.display = "none";
+        document.getElementById("ChickenFlorentineInfo").style.display = "none";
+        document.getElementById("CombinationInfo").style.display = "none";
+        document.getElementById("MargheritaInfo").style.display = "none";
+        document.getElementById("BBQChickenInfo").style.display = "block";
+        document.getElementById("PizzaBuildYourOwnInfo").style.display = "none";
+
+    }
+    
+
+    if(e.target.innerText === "Build Your Own"){
+        document.getElementById("CheeseLoversInfo").style.display = "none";
+        document.getElementById("PepperoniInfo").style.display = "none";
+        document.getElementById("HawaiianInfo").style.display = "none";
+        document.getElementById("MeatLoversInfo").style.display = "none";
+        document.getElementById("VeggieDeltaInfo").style.display = "none";
+        document.getElementById("ChickenFlorentineInfo").style.display = "none";
+        document.getElementById("CombinationInfo").style.display = "none";
+        document.getElementById("MargheritaInfo").style.display = "none";
+        document.getElementById("BBQChickenInfo").style.display = "none";
+        document.getElementById("PizzaBuildYourOwnInfo").style.display = "block";
+    }
+}
+
 //event listeners------>
-document.getElementById("pizzaItem1").addEventListener("click", showPizzaItem1);
-document.getElementById("pizzaItem2").addEventListener("click", showPizzaItem2);
-document.getElementById("pizzaItem3").addEventListener("click", showPizzaItem3);
-document.getElementById("pizzaItem4").addEventListener("click", showPizzaItem4);
-document.getElementById("pizzaItem5").addEventListener("click", showPizzaItem5);
-document.getElementById("pizzaItem6").addEventListener("click", showPizzaItem6);
-document.getElementById("pizzaItem7").addEventListener("click", showPizzaItem7);
-document.getElementById("pizzaItem8").addEventListener("click", showPizzaItem8);
-document.getElementById("pizzaItem9").addEventListener("click", showPizzaItem9);
+document.getElementById("PizzaCheeseLovers").addEventListener("click", PizzaMenuHandler);
+document.getElementById("PizzaPepperoni").addEventListener("click", PizzaMenuHandler);
+document.getElementById("PizzaHawaiian").addEventListener("click", PizzaMenuHandler);
+document.getElementById("PizzaMeatLovers").addEventListener("click", PizzaMenuHandler);
+document.getElementById("PizzaVeggieDelta").addEventListener("click", PizzaMenuHandler);
+document.getElementById("PizzaChickenFlorentine").addEventListener("click", PizzaMenuHandler);
+document.getElementById("PizzaCombination").addEventListener("click", PizzaMenuHandler);
+document.getElementById("PizzaMargherita").addEventListener("click", PizzaMenuHandler);
+document.getElementById("PizzaBBQChicken").addEventListener("click", PizzaMenuHandler);
+document.getElementById("PizzaBuildYourOwn").addEventListener("click", PizzaMenuHandler);
 
 
 
-//Functions------------>
 
-function showPizzaItem1(e) {
-    document.getElementById("pizzaItem1Info").style.display = "block";
-    document.getElementById("pizzaItem2Info").style.display = "none";
-    document.getElementById("pizzaItem3Info").style.display = "none";
-    document.getElementById("pizzaItem4Info").style.display = "none";
-    document.getElementById("pizzaItem5Info").style.display = "none";
-    document.getElementById("pizzaItem6Info").style.display = "none";
-    document.getElementById("pizzaItem7Info").style.display = "none";
-    document.getElementById("pizzaItem8Info").style.display = "none";
-    document.getElementById("pizzaItem9Info").style.display = "none";
-
-}
-console.log(pizzaItem1V)
-
-function showPizzaItem2(e) {
-    document.getElementById("pizzaItem1Info").style.display = "none";
-    document.getElementById("pizzaItem2Info").style.display = "block";
-    document.getElementById("pizzaItem3Info").style.display = "none";
-    document.getElementById("pizzaItem4Info").style.display = "none";
-    document.getElementById("pizzaItem5Info").style.display = "none";
-    document.getElementById("pizzaItem6Info").style.display = "none";
-    document.getElementById("pizzaItem7Info").style.display = "none";
-    document.getElementById("pizzaItem8Info").style.display = "none";
-    document.getElementById("pizzaItem9Info").style.display = "none";
-}
-
-console.log(pizzaItem2V)
-
-function showPizzaItem3(e) {
-    document.getElementById("pizzaItem1Info").style.display = "none";
-    document.getElementById("pizzaItem2Info").style.display = "none";
-    document.getElementById("pizzaItem3Info").style.display = "block";
-    document.getElementById("pizzaItem4Info").style.display = "none";
-    document.getElementById("pizzaItem5Info").style.display = "none";
-    document.getElementById("pizzaItem6Info").style.display = "none";
-    document.getElementById("pizzaItem7Info").style.display = "none";
-    document.getElementById("pizzaItem8Info").style.display = "none";
-    document.getElementById("pizzaItem9Info").style.display = "none";
-}
-
-console.log(pizzaItem3V)
-
-function showPizzaItem4(e) {
-    document.getElementById("pizzaItem1Info").style.display = "none";
-    document.getElementById("pizzaItem2Info").style.display = "none";
-    document.getElementById("pizzaItem3Info").style.display = "none";
-    document.getElementById("pizzaItem4Info").style.display = "block";
-    document.getElementById("pizzaItem5Info").style.display = "none";
-    document.getElementById("pizzaItem6Info").style.display = "none";
-    document.getElementById("pizzaItem7Info").style.display = "none";
-    document.getElementById("pizzaItem8Info").style.display = "none";
-    document.getElementById("pizzaItem9Info").style.display = "none";
-}
-
-console.log(pizzaItem4V)
-
-function showPizzaItem5(e) {
-    document.getElementById("pizzaItem1Info").style.display = "none";
-    document.getElementById("pizzaItem2Info").style.display = "none";
-    document.getElementById("pizzaItem3Info").style.display = "none";
-    document.getElementById("pizzaItem4Info").style.display = "none";
-    document.getElementById("pizzaItem5Info").style.display = "block";
-    document.getElementById("pizzaItem6Info").style.display = "none";
-    document.getElementById("pizzaItem7Info").style.display = "none";
-    document.getElementById("pizzaItem8Info").style.display = "none";
-    document.getElementById("pizzaItem9Info").style.display = "none";
-}
-
-console.log(pizzaItem5V)
-
-function showPizzaItem6(e) {
-    document.getElementById("pizzaItem1Info").style.display = "none";
-    document.getElementById("pizzaItem2Info").style.display = "none";
-    document.getElementById("pizzaItem3Info").style.display = "none";
-    document.getElementById("pizzaItem4Info").style.display = "none";
-    document.getElementById("pizzaItem5Info").style.display = "none";
-    document.getElementById("pizzaItem6Info").style.display = "block";
-    document.getElementById("pizzaItem7Info").style.display = "none";
-    document.getElementById("pizzaItem8Info").style.display = "none";
-    document.getElementById("pizzaItem9Info").style.display = "none";
-}
-
-console.log(pizzaItem6V)
-
-function showPizzaItem7(e) {
-    document.getElementById("pizzaItem1Info").style.display = "none";
-    document.getElementById("pizzaItem2Info").style.display = "none";
-    document.getElementById("pizzaItem3Info").style.display = "none";
-    document.getElementById("pizzaItem4Info").style.display = "none";
-    document.getElementById("pizzaItem5Info").style.display = "none";
-    document.getElementById("pizzaItem6Info").style.display = "none";
-    document.getElementById("pizzaItem7Info").style.display = "block";
-    document.getElementById("pizzaItem8Info").style.display = "none";
-    document.getElementById("pizzaItem9Info").style.display = "none";
-}
-
-console.log(pizzaItem7V)
-
-function showPizzaItem8(e) {
-    document.getElementById("pizzaItem1Info").style.display = "none";
-    document.getElementById("pizzaItem2Info").style.display = "none";
-    document.getElementById("pizzaItem3Info").style.display = "none";
-    document.getElementById("pizzaItem4Info").style.display = "none";
-    document.getElementById("pizzaItem5Info").style.display = "none";
-    document.getElementById("pizzaItem6Info").style.display = "none";
-    document.getElementById("pizzaItem7Info").style.display = "none";
-    document.getElementById("pizzaItem8Info").style.display = "block";
-    document.getElementById("pizzaItem9Info").style.display = "none";
-}
-
-console.log(pizzaItem8V)
-
-function showPizzaItem9(e) {
-    document.getElementById("pizzaItem1Info").style.display = "none";
-    document.getElementById("pizzaItem2Info").style.display = "none";
-    document.getElementById("pizzaItem3Info").style.display = "none";
-    document.getElementById("pizzaItem4Info").style.display = "none";
-    document.getElementById("pizzaItem5Info").style.display = "none";
-    document.getElementById("pizzaItem6Info").style.display = "none";
-    document.getElementById("pizzaItem7Info").style.display = "none";
-    document.getElementById("pizzaItem8Info").style.display = "none";
-    document.getElementById("pizzaItem9Info").style.display = "block";
-}
-
-console.log(pizzaItem9V)
 
 
 //Sandwiches items----------------------------------------------------->
