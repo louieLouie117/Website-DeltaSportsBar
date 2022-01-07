@@ -425,50 +425,52 @@ document.getElementById("SandwichFishChips").addEventListener("click", Sandwiche
 
 //Salads Items------------------------------------------------------->
 
-var saladsIemt1V;
-var saladsIemt2V;
-var saladsIemt3V;
-var saladsIemt4V;
+
+const SaladsMenuHandler = (e) =>{
+    console.log(e.target.innerText)
+    if(e.target.innerText === "House Salad"){
+        document.getElementById("HouseSaladInfo").style.display = "block";
+        document.getElementById("SideSaladInfo").style.display = "none";
+        document.getElementById("ChefSaladInfo").style.display = "none";
+        document.getElementById("CaesarSaladInfo").style.display = "none";
+
+
+    }
+     if(e.target.innerText === "Side Salad"){
+        document.getElementById("HouseSaladInfo").style.display = "none";
+        document.getElementById("SideSaladInfo").style.display = "block";
+        document.getElementById("ChefSaladInfo").style.display = "none";
+        document.getElementById("CaesarSaladInfo").style.display = "none";
+
+
+    }
+
+    if(e.target.innerText === "Chef Salad"){
+        document.getElementById("HouseSaladInfo").style.display = "none";
+        document.getElementById("SideSaladInfo").style.display = "none";
+        document.getElementById("ChefSaladInfo").style.display = "block";
+        document.getElementById("CaesarSaladInfo").style.display = "none";
+
+
+    }
+    if(e.target.innerText === "Caesar Salad"){
+        document.getElementById("HouseSaladInfo").style.display = "none";
+        document.getElementById("SideSaladInfo").style.display = "none";
+        document.getElementById("ChefSaladInfo").style.display = "none";
+        document.getElementById("CaesarSaladInfo").style.display = "block";
+
+
+    }
+    
+
+}
+
 
 //event listeners------>
-document.getElementById("saladItem1").addEventListener("click", showSaladItem1);
-document.getElementById("saladItem2").addEventListener("click", showSaladItem2);
-document.getElementById("saladItem3").addEventListener("click", showSaladItem3);
-document.getElementById("saladItem4").addEventListener("click", showSaladItem4);
-
-//Functions------------>
-
-function showSaladItem1(e) {
-    document.getElementById("saladItem1Info").style.display = "block";
-    document.getElementById("saladItem2Info").style.display = "none";
-    document.getElementById("saladItem3Info").style.display = "none";
-    document.getElementById("saladItem4Info").style.display = "none";
-
-}
-
-function showSaladItem2(e) {
-    document.getElementById("saladItem1Info").style.display = "none";
-    document.getElementById("saladItem2Info").style.display = "block";
-    document.getElementById("saladItem3Info").style.display = "none";
-    document.getElementById("saladItem4Info").style.display = "none";
-
-}
-
-function showSaladItem3(e) {
-    document.getElementById("saladItem1Info").style.display = "none";
-    document.getElementById("saladItem2Info").style.display = "none";
-    document.getElementById("saladItem3Info").style.display = "block";
-    document.getElementById("saladItem4Info").style.display = "none";
-
-}
-
-function showSaladItem4(e) {
-    document.getElementById("saladItem1Info").style.display = "none";
-    document.getElementById("saladItem2Info").style.display = "none";
-    document.getElementById("saladItem3Info").style.display = "none";
-    document.getElementById("saladItem4Info").style.display = "block";
-
-}
+document.getElementById("SaladHouseSalad").addEventListener("click", SaladsMenuHandler);
+document.getElementById("SaladSideSalad").addEventListener("click", SaladsMenuHandler);
+document.getElementById("SaladChefSalad").addEventListener("click", SaladsMenuHandler);
+document.getElementById("SaladCaesarSalad").addEventListener("click", SaladsMenuHandler);
 
 //burger items------------------------------------------------->
 
