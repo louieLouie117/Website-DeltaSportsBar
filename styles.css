@@ -143,6 +143,11 @@ header a {
   } */
 }
 
+a>h2{
+  font: 1.3em sans-serif;
+  
+}
+
 /*Main Styles------------------------------------------------------->*/
 
 main {
@@ -408,10 +413,12 @@ main h2 {
 /*Main Responsive ------------------------------------------------------->*/
 /*Tablest styles*/
 @media screen and (min-width: 1000px) {
-  .option-container {
+  .button-container a:first-of-type{
     display: none;
   }
 }
+
+
 
 /*Desktop Styles----------------------------------------------->*/
 @media screen and (min-width: 1300px) {
