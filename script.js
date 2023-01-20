@@ -605,3 +605,44 @@ const AppetizerItemHandler = e =>{
  
    
 }
+
+
+const SaladItemHandler = e => {
+    console.log("Salad Item handler", e.target.innerText)
+
+    if(e.target.innerText === "House Salad"){
+        document.getElementById("HouseSaladInfo").style.display = "block";
+        document.getElementById("SideSaladInfo").style.display = "none";
+        document.getElementById("CaesarSaladInfo").style.display = "none";
+        document.getElementById("ChefSaladInfo").style.display = "none";
+
+    }
+
+    if(e.target.innerText === "Side Salad"){
+        document.getElementById("HouseSaladInfo").style.display = "none";
+        document.getElementById("SideSaladInfo").style.display = "block";
+        document.getElementById("CaesarSaladInfo").style.display = "none";
+        document.getElementById("ChefSaladInfo").style.display = "none";
+
+    }
+
+    
+    if(e.target.innerText === "Caesar Salad"){
+        document.getElementById("HouseSaladInfo").style.display = "none";
+        document.getElementById("SideSaladInfo").style.display = "none";
+        document.getElementById("CaesarSaladInfo").style.display = "block";
+        document.getElementById("ChefSaladInfo").style.display = "none";
+
+    }
+
+
+      
+    if(e.target.innerText === "Chef Salad"){
+        document.getElementById("HouseSaladInfo").style.display = "none";
+        document.getElementById("SideSaladInfo").style.display = "none";
+        document.getElementById("CaesarSaladInfo").style.display = "none";
+        document.getElementById("ChefSaladInfo").style.display = "block";
+
+    }
+
+}
