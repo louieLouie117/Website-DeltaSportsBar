@@ -615,7 +615,7 @@ const SaladItemHandler = e => {
         document.getElementById("SideSaladInfo").style.display = "none";
         document.getElementById("CaesarSaladInfo").style.display = "none";
         document.getElementById("ChefSaladInfo").style.display = "none";
-
+        return
     }
 
     if(e.target.innerText === "Side Salad"){
@@ -623,7 +623,7 @@ const SaladItemHandler = e => {
         document.getElementById("SideSaladInfo").style.display = "block";
         document.getElementById("CaesarSaladInfo").style.display = "none";
         document.getElementById("ChefSaladInfo").style.display = "none";
-
+        return
     }
 
     
@@ -632,7 +632,7 @@ const SaladItemHandler = e => {
         document.getElementById("SideSaladInfo").style.display = "none";
         document.getElementById("CaesarSaladInfo").style.display = "block";
         document.getElementById("ChefSaladInfo").style.display = "none";
-
+        return
     }
 
 
@@ -642,7 +642,58 @@ const SaladItemHandler = e => {
         document.getElementById("SideSaladInfo").style.display = "none";
         document.getElementById("CaesarSaladInfo").style.display = "none";
         document.getElementById("ChefSaladInfo").style.display = "block";
+        return
+    }
 
+}
+
+
+const BurgerItemHandler = e =>{
+    console.log("Burger Item handler", e.target.innerText);
+    if(e.target.innerText === "Patty Melt"){
+        document.getElementById("burgerItem1Info").style.display = "block";
+        document.getElementById("burgerItem2Info").style.display = "none";
+        document.getElementById("burgerItem3Info").style.display = "none";
+        document.getElementById("burgerItem4Info").style.display = "none";
+        document.getElementById("burgerItem5Info").style.display = "none";
+        return
+    }
+
+
+    if(e.target.innerText === "Classic Burger"){
+        document.getElementById("burgerItem1Info").style.display = "none";
+        document.getElementById("burgerItem2Info").style.display = "block";
+        document.getElementById("burgerItem3Info").style.display = "none";
+        document.getElementById("burgerItem4Info").style.display = "none";
+        document.getElementById("burgerItem5Info").style.display = "none";
+        return
+    }
+
+    if(e.target.innerText === "Teriyaki Burger"){
+        document.getElementById("burgerItem1Info").style.display = "none";
+        document.getElementById("burgerItem2Info").style.display = "none";
+        document.getElementById("burgerItem3Info").style.display = "block";
+        document.getElementById("burgerItem4Info").style.display = "none";
+        document.getElementById("burgerItem5Info").style.display = "none";
+        return
+    }
+
+    if(e.target.innerText === "Rodeo Burger"){
+        document.getElementById("burgerItem1Info").style.display = "none";
+        document.getElementById("burgerItem2Info").style.display = "none";
+        document.getElementById("burgerItem3Info").style.display = "none";
+        document.getElementById("burgerItem4Info").style.display = "block";
+        document.getElementById("burgerItem5Info").style.display = "none";
+        return
+    }
+
+    if(e.target.innerText === "Veggie Burger"){
+        document.getElementById("burgerItem1Info").style.display = "none";
+        document.getElementById("burgerItem2Info").style.display = "none";
+        document.getElementById("burgerItem3Info").style.display = "none";
+        document.getElementById("burgerItem4Info").style.display = "none";
+        document.getElementById("burgerItem5Info").style.display = "block";
+        return
     }
 
 }
