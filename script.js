@@ -339,6 +339,23 @@ const SandwichItemHandler = e => {
 
 
     }
+
+    if(e.target.innerText === "Ribeye Steak Sandwich"){
+        document.getElementById("PrimeRibDipInfo").style.display = "none";
+        document.getElementById("DeltaCheeseSteakInfo").style.display = "none";
+        document.getElementById("DeltaBLTInfo").style.display = "none";
+        document.getElementById("DeltaClubInfo").style.display = "none";
+        document.getElementById("RubenInfo").style.display = "none";
+        document.getElementById("BaconRanchChickenInfo").style.display = "none";
+        document.getElementById("RibeyeSteakInfo").style.display = "none";
+        document.getElementById("TurkeyBaconAvocadoWrapInfo").style.display = "none";
+        document.getElementById("FriedShrimpBasketInfo").style.display = "none";
+        document.getElementById("FishChipsInfo").style.display = "none";
+        document.getElementById("RibeySteakInfo").style.display = "block";
+
+
+
+    }
 }
 
 
@@ -686,6 +703,9 @@ const BurgerItemHandler = e =>{
         document.getElementById("burgerItem5Info").style.display = "none";
         return
     }
+
+    
+ 
 
     if(e.target.innerText === "Veggie Burger"){
         document.getElementById("burgerItem1Info").style.display = "none";
