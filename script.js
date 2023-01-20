@@ -1,77 +1,50 @@
 //Showing and hiding menu items------------------------------------->
 
-//Varibalse---------------->
-var pizzaV;
-var sandwichesV;
-var appetizersV;
-var saladsV;
-var burgersV;
+
+const MenuHandler = e =>{
+    console.log("menu hanndler was called", e.target.innerText)
+
+    if(e.target.innerText === "Pizza"){
+        document.getElementById("pizzasMenu").style.display = "grid";
+        document.getElementById("sandwichesMenu").style.display = "none";
+        document.getElementById("appetizersMenu").style.display = "none";
+        document.getElementById("saladsMenu").style.display = "none";
+        document.getElementById("burgersMenu").style.display = "none";
+    }
+
+    if(e.target.innerText === "Sandwiches"){
+        document.getElementById("pizzasMenu").style.display = "none";
+        document.getElementById("sandwichesMenu").style.display = "grid";
+        document.getElementById("appetizersMenu").style.display = "none";
+        document.getElementById("saladsMenu").style.display = "none";
+        document.getElementById("burgersMenu").style.display = "none";
+    }
+
+    if(e.target.innerText === "Appetizers"){
+        document.getElementById("pizzasMenu").style.display = "none";
+        document.getElementById("sandwichesMenu").style.display = "none";
+        document.getElementById("appetizersMenu").style.display = "grid";
+        document.getElementById("saladsMenu").style.display = "none";
+        document.getElementById("burgersMenu").style.display = "none";
+    }
 
 
-//Event Listeners---------->
-document.getElementById("onClickPizza").addEventListener("click", showPizzas);
-document.getElementById("onClickSandwiches").addEventListener("click", showSandwiches);
-document.getElementById("onClickAppetizers").addEventListener("click", showAppetizers);
-document.getElementById("onClickSalads").addEventListener("click", showSalads);
-document.getElementById("onClickBurgers").addEventListener("click", showBurgers);
+    if(e.target.innerText === "Salads"){
+        document.getElementById("pizzasMenu").style.display = "none";
+        document.getElementById("sandwichesMenu").style.display = "none";
+        document.getElementById("appetizersMenu").style.display = "none";
+        document.getElementById("saladsMenu").style.display = "grid";
+        document.getElementById("burgersMenu").style.display = "none";
+    }
 
-
-
-//Functions for menu------>
-function showPizzas(e) {
-    document.getElementById("pizzasMenu").style.display = "grid";
-    document.getElementById("sandwichesMenu").style.display = "none";
-    document.getElementById("appetizersMenu").style.display = "none";
-    document.getElementById("saladsMenu").style.display = "none";
-    document.getElementById("burgersMenu").style.display = "none";
-};
-console.log(pizzaV)
-
-
-function showSandwiches(e) {
-    document.getElementById("pizzasMenu").style.display = "none";
-    document.getElementById("sandwichesMenu").style.display = "grid";
-    document.getElementById("appetizersMenu").style.display = "none";
-    document.getElementById("saladsMenu").style.display = "none";
-    document.getElementById("burgersMenu").style.display = "none";
-
-};
-console.log(sandwichesV)
-
-
-
-function showAppetizers(e) {
-    document.getElementById("pizzasMenu").style.display = "none";
-    document.getElementById("sandwichesMenu").style.display = "none";
-    document.getElementById("appetizersMenu").style.display = "grid";
-    document.getElementById("saladsMenu").style.display = "none";
-    document.getElementById("burgersMenu").style.display = "none";
-
-};
-console.log(appetizersV)
-
-function showSalads(e) {
-
-    document.getElementById("pizzasMenu").style.display = "none";
-    document.getElementById("sandwichesMenu").style.display = "none";
-    document.getElementById("appetizersMenu").style.display = "none";
-    document.getElementById("saladsMenu").style.display = "grid";
-    document.getElementById("burgersMenu").style.display = "none";
-
-};
-console.log(saladsV)
-
-function showBurgers(e) {
-
-    document.getElementById("pizzasMenu").style.display = "none";
-    document.getElementById("sandwichesMenu").style.display = "none";
-    document.getElementById("appetizersMenu").style.display = "none";
-    document.getElementById("saladsMenu").style.display = "none";
-    document.getElementById("burgersMenu").style.display = "grid";
-
-};
-console.log(burgersV)
-
+    if(e.target.innerText === "Burgers"){
+        document.getElementById("pizzasMenu").style.display = "none";
+        document.getElementById("sandwichesMenu").style.display = "none";
+        document.getElementById("appetizersMenu").style.display = "none";
+        document.getElementById("saladsMenu").style.display = "none";
+        document.getElementById("burgersMenu").style.display = "grid";
+    }
+}
 
 
 //pizza items----------------------------------->
