@@ -18,6 +18,11 @@ body  ::-webkit-scrollbar{
   display: none;
 }
 
+a{
+  text-decoration: none;
+
+}
+
 
 /*Body Responsive------------------------------------------------------->*/
 @media screen and (min-width: 1000px) {
@@ -121,7 +126,8 @@ header>a {
   grid-row: 2/3;
   grid-column: 1/2;
   display: grid;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  justify-content: center;
 }
 
 /*Header Responsive------------------------------------------------------->*/
