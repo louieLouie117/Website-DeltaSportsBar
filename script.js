@@ -1,6 +1,6 @@
 // load the page
 document.addEventListener("DOMContentLoaded", () => {
-    BreakfastItemHandler();
+    BreakfastIemGenerator();
 });
 
 //Showing and hiding menu items------------------------------------->
@@ -42,7 +42,7 @@ const ShowItemHandler = (e, id) => {
 }
 
 
-const BreakfastItemHandler = e => {
+const BreakfastIemGenerator = e => {
     console.log("Breakfast item handler",);
 
     // object for breakfast menu with random items {Name : description, price}

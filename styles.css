@@ -27,14 +27,14 @@ a{
 /*Body Responsive------------------------------------------------------->*/
 @media screen and (min-width: 1000px) {
   body {
-    grid-template-columns: 1fr 2fr;
+    /* grid-template-columns: 1fr 2fr; */
     max-width: none;
   }
 }
 
 @media screen and (min-width: 1300px) {
   body {
-    grid-template-columns: 1fr 4fr;
+    /* grid-template-columns: 1fr 4fr; */
     max-width: none;
   }
 }
@@ -43,8 +43,7 @@ a{
 
 header {
   display: grid;
-  height: 100vh;
-  overflow: scroll;
+
 }
 
 header>a {
@@ -132,13 +131,12 @@ header>a {
 
 /*Header Responsive------------------------------------------------------->*/
 @media screen and (min-width: 1000px) {
-  header {
+  /* header {
     position: sticky;
     top: 0;
     left: 0;
     max-height: 110vh;
-    /* z-index: -1; */
-  }
+  } */
 
   /* header>picture img {
     z-index: -1;
@@ -153,7 +151,10 @@ a>h2{
   
 }
 
+
+
 /*Main Styles------------------------------------------------------->*/
+
 
 main {
   display: grid;
@@ -417,17 +418,24 @@ main h2 {
 /*Main Responsive ------------------------------------------------------->*/
 /*Tablest styles*/
 @media screen and (min-width: 1000px) {
-  .button-container a:first-of-type{
-    display: none;
-  }
+
 }
 
 
 
 /*Desktop Styles----------------------------------------------->*/
 @media screen and (min-width: 1300px) {
-  main {
+  /* main {
     background: white;
+  } */
+
+  .twoClums{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
   }
 
   main h2 {
@@ -441,7 +449,7 @@ main h2 {
 
   .menu-container {
     column-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     margin: 40px;
     align-items: start;
     padding-bottom: 400px;
