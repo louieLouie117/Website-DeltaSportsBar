@@ -1,3 +1,8 @@
+// load the page
+document.addEventListener("DOMContentLoaded", () => {
+    BreakfastItemHandler();
+});
+
 //Showing and hiding menu items------------------------------------->
 
 const MenuHandler = e => {
@@ -5,6 +10,7 @@ const MenuHandler = e => {
 
     // Define a mapping of menu item texts to their corresponding menu element IDs
     const menuMapping = {
+        "Breakfast": "breakfastMenuList",
         "Pizza": "pizzasMenu",
         "Sandwiches": "sandwichesMenu",
         "Appetizers": "appetizersMenu",
@@ -23,6 +29,72 @@ const MenuHandler = e => {
         document.getElementById(selectedMenuId).style.display = "grid";
     }
 };
+
+
+const ShowItemHandler = (e, id) => {
+    console.log("Show item handler was called", e.target.innerText, id);
+
+    // toggle the item info display
+    const itemInfo = document.getElementById(id + "Info");
+    if (itemInfo) {
+        itemInfo.style.display = itemInfo.style.display === "block" ? "none" : "block";
+    }
+}
+
+
+const BreakfastItemHandler = e => {
+    console.log("Breakfast item handler",);
+
+    // object for breakfast menu with random items {Name : description, price}
+    const breakfastMenu = {
+        "Good Morning": {
+            id: "breakfast1",
+            description: "1 egg, 2 bacon strips, 2 sausage links, hash browns and 2 pancakes.",
+            price: "$5.00"
+        },
+        "Healthy Start": {
+            id: "breakfast2",
+            description: "Egg white omelette with spinach, mushrooms, and tomatoes. Served with fresh fruit.",
+            price: "$6.50"
+        },
+        "Classic Pancakes": {
+            id: "breakfast3",
+            description: "Three fluffy pancakes served with butter and maple syrup.",
+            price: "$4.50"
+        },
+        "French Toast": {
+            id: "breakfast4",
+            description: "Thick slices of bread dipped in a mixture of eggs, milk, and cinnamon, then cooked until golden brown.",
+            price: "$5.50"
+        },
+        "Breakfast Burrito": {
+            id: "breakfast5",
+            description: "Scrambled eggs, cheese, bacon, and salsa wrapped in a warm tortilla.",
+            price: "$6.00"
+        }
+    };
+
+    const breakfastMenuList = document.getElementById("breakfastMenuList");
+    // clear the list
+    breakfastMenuList.innerHTML = "";
+    Object.entries(breakfastMenu).forEach(([name, item]) => {
+        const { description, price, id} = item;
+        breakfastMenuList.innerHTML += `
+        <li class="item-container">
+            <div class="item-headding" id="${id}">
+            <h4 onclick="ShowItemHandler(event, '${id}')">${name}</h4>
+            <img src="Assests/menuDopts.png" alt="" />
+            </div>
+            <div class="item-info" id="${id}Info">
+            <p>${description}</p>
+            <p>${price} </p>
+            </div>
+        </li>
+        `;
+    });
+
+};
+
 
 
 

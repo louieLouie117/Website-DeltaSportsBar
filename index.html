@@ -117,12 +117,22 @@
       <h2 id="MenuTop">Menu</h2>
 
       <div class="menu-container">
+
+        <section class="content-container">          
+          <div class="block-container">
+            <div class="block-click"></div>
+            <h3 id="MenuBreakfast" onclick="MenuHandler(event)">Breakfast</h3>
+          </div>
+
+          <ul class="allitems-container" id="breakfastMenuList"></ul>
+        </section>
         <!--Pizza Menu-->
-        <div class="content-container">
+        <section class="content-container">          
           <div class="block-container">
             <div class="block-click"></div>
             <h3 id="MenuPizza" onclick="MenuHandler(event)">Pizza</h3>
           </div>
+
           <ul class="allitems-container" id="pizzasMenu">
             <li class="item-container">
               <div class="item-headding" id="PizzaCheeseLovers">
@@ -252,7 +262,7 @@
             </li>
         
           </ul>
-        </div>
+        </section>
         <!--Sandwiches Menu-->
         <section class="content-container">
           <div class="block-container">
