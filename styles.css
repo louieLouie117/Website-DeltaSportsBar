@@ -129,6 +129,7 @@ header>a {
   justify-content: center;
 }
 
+
 /*Header Responsive------------------------------------------------------->*/
 @media screen and (min-width: 1000px) {
   /* header {
@@ -358,6 +359,7 @@ main h2 {
   font: 1.2em sans-serif;
   min-width: 300px;
   min-height: 415px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.377);
   
 }
 
@@ -380,6 +382,7 @@ main h2 {
   background: #013368;
   margin: 20px;
   border-radius: 20px;
+  margin-top: 45px;
 }
 
 .info-container h2 {
@@ -432,6 +435,10 @@ main h2 {
   /* main {
     background: white;
   } */
+
+  .button-container a:first-child {
+    display: none;
+  }
 
   .twoClums{
     display: grid;
