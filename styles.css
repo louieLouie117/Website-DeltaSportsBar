@@ -4,6 +4,7 @@ body {
   margin: 0 auto;
   background: white;
   font: 1em sans-serif;
+  row-gap: 70px;
 }
 
 h1 {
@@ -64,8 +65,8 @@ header>a {
 }
 
 .logo-container {
-  grid-row: 1/2;
-  grid-column: 1/2;
+  /* grid-row: 1/2;
+  grid-column: 1/2; */
   display: grid;
   justify-content: center;
   border-radius: 0 0 20px 20px;
@@ -122,8 +123,8 @@ header>a {
 }
 
 .option-container {
-  grid-row: 2/3;
-  grid-column: 1/2;
+  /* grid-row: 2/3;
+  grid-column: 1/2; */
   display: grid;
   /* margin-bottom: 60px; */
   justify-content: center;
@@ -158,7 +159,6 @@ a>h2{
 
 main {
   display: grid;
-  padding-bottom: 200px;
 
 }
 
@@ -231,7 +231,7 @@ main h2 {
   height: auto;
   width: auto;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 .item-container {
@@ -254,7 +254,7 @@ main h2 {
 }
 
 .item-headding h4 {
-  font: 1.5em sans-serif;
+  font: 1.2em sans-serif;
   color: black;
   font-weight: normal;
   margin: 0;
@@ -341,6 +341,8 @@ main h2 {
   overflow: hidden;
   overflow-x: scroll;
   padding: 0;
+  justify-content: center;
+  column-gap: 20px;
 
 }
 
@@ -432,6 +434,15 @@ main h2 {
   .twoClums{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .threeColums{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
     column-gap: 10px;
     justify-content: center;
     align-items: center;
