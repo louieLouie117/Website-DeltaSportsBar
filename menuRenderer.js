@@ -8,12 +8,25 @@ class MenuRenderer {
     init() {
         document.addEventListener("DOMContentLoaded", () => {
             this.renderAllMenus();
+            this.hideAllMenus();
             this.setupEventListeners();
+        });
+    }
+
+    // Hide all menus by default
+    hideAllMenus() {
+        const menuIds = [ 'breakfastMenuList', 'pizzasMenu', 'sandwichesMenu', 'appetizersMenu', 'saladsMenu', 'burgersMenu'];
+        menuIds.forEach(id => {
+            const element = document.getElementById(id);
+            if (element) {
+                element.style.display = "none";
+            }
         });
     }
 
     // Render all menu categories
     renderAllMenus() {
+        this.renderRecommendedMenu();
         this.renderBreakfastMenu();
         this.renderPizzaMenu();
         this.renderSandwichesMenu();
@@ -47,6 +60,10 @@ class MenuRenderer {
     }
 
     // Specific menu renderers
+    renderRecommendedMenu() {
+        this.renderMenuItems('recommendedMenu', 'recommended', 'menuRenderer.handleItemClick');
+    }
+
     renderBreakfastMenu() {
         this.renderMenuItems('breakfastMenuList', 'breakfast', 'menuRenderer.handleItemClick');
     }
@@ -94,6 +111,7 @@ class MenuRenderer {
     // Menu category handler
     handleMenuClick(event) {
         const menuMapping = {
+            "Recommended": "recommendedMenu",
             "Breakfast": "breakfastMenuList",
             "Pizza": "pizzasMenu",
             "Sandwiches": "sandwichesMenu",
@@ -128,7 +146,7 @@ class MenuRenderer {
 
     setupEventListeners() {
         // Setup menu category click handlers
-        const menuItems = ['MenuBreakfast', 'MenuPizza', 'MenuSandwiches', 'MenuAppetizers', 'MenuSalads', 'MenuBurgers'];
+        const menuItems = ['MenuRecommended', 'MenuBreakfast', 'MenuPizza', 'MenuSandwiches', 'MenuAppetizers', 'MenuSalads', 'MenuBurgers'];
         
         menuItems.forEach(itemId => {
             const element = document.getElementById(itemId);

@@ -1,5 +1,70 @@
 // Menu Data - All restaurant menu items organized by category
 const menuData = {
+
+    recommended: {
+        // Cheese Burger, Club, Delta Cheese Steak, Hot Pastrami, Santa Fe Chicken, Turkey or Chicken Wrap, Rodeo Burger, Veggie Burger, Chicken Tenders, Delta Indian Roll, Loaded Tater Tots, Fish & Chips.
+        "Cheese Burger": {
+            id: "burgerItem2",
+            description: "Classic burger with lettuce, tomatoes, onion, pickles and cheese. With fries on the side.",
+            price: "$16.00"
+        },
+        "Club": {
+            id: "SandwichDeltaClub",
+            description: "Triple Decker Sandwich of sliced ham, turkey, bacon, lettuce, tomato, mayonnaise on toasted white or wheat bread. add avocado for $3.00",
+            price: "$18.00"
+        },
+        "Delta Cheese Steak": {
+            id: "SandwichDeltaCheeseSteak",
+            description: "Grilled thinly sliced Beef, Steak or Chicken with grilled onion and bell peppers, topped with jack cheese.",
+            price: "$18.00"
+        },
+        "Hot Pastrami": {
+            id: "burgerItem6",
+            description: "Hot pastrami Provolone, and mustard on grilled rye bread. With fries on the side.",
+            price: "$16.00"
+        },
+        "Santa Fe Chicken": {
+            id: "SandwichSantaFeChicken",
+            description: "Grilled chicken breast with pepper jack, mayo on a toasted bun. With fries on the side.",
+            price: "$18.00"
+        },
+        "Turkey or Chicken Wrap": {
+            id: "SandwichTurkeyChickenWrap",
+            description: "A classic Turkey or Chicken Wrap with lettuce, avocado, tomato, and mayo. With fries on the side.",
+            price: "$18.00"
+        },
+        "Rodeo Burger": {
+            id: "burgerItem4",
+            description: "Grilled beef patty topped with crispy bacon, fried onion strings, cheddar cheese and bbq sauce. With fries on the side.",
+            price: "$19.00"
+        },
+        "Veggie Burger": {
+            id: "burgerItem5",
+            description: "Looking for veggie burger patty that does not contain meat and has all the great taste. + cheese $1.00 or + avocado for $1.50",
+            price: "$17.00"
+        },
+        "Chicken Tenders": {
+            id: "AppetizerChickenTenders",
+            description: "Breaded chicken tenders with fries.",
+            price: "$15.00"
+        },
+        "Delta Indian Roll": {
+            id: "AppetizerDeltaIndianRoll",
+            description: "Grilled butter chicken warp (available in spicy upon request)",
+            price: "$16.00"
+        },
+        "Loaded Tater Tots": {
+            id: "AppetizerLoadedTaterTots",
+            description: "Tater tots topped with cheese, bacon, and green onions.",
+            price: "$14.00"
+        },
+        "Fish & Chips": {
+            id: "SandwichFishChips",
+            description: "Beer batter fried cod served with fries.",
+            price: "Lunch (3) $19.00 Dinner (4) $23.00"
+        }
+    },
+
     breakfast: {
         "Good Morning": {
             id: "breakfast1",
