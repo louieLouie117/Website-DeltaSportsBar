@@ -6,17 +6,17 @@ const menuData = {
         "Cheese Burger": {
             id: "RecommendedCheseBurger",
             description: "Classic burger with lettuce, tomatoes, onion, pickles and cheese. With fries on the side.",
-            price: "$16.00"
+            price: "$17.00"
         },
         "Club": {
             id: "RecommendedClub",
             description: "Triple Decker Sandwich of sliced ham, turkey, bacon, lettuce, tomato, mayonnaise on toasted white or wheat bread. add avocado for $3.00",
-            price: "$18.00"
+            price: "$19.00"
         },
         "Delta Cheese Steak": {
             id: "RecommendedDeltaCheeseSteak",
             description: "Grilled thinly sliced Beef, Steak or Chicken with grilled onion and bell peppers, topped with jack cheese.",
-            price: "$18.00"
+            price: "$19.00"
         },
         "Hot Pastrami": {
             id: "RecommendedHotPastrami",
@@ -26,12 +26,12 @@ const menuData = {
         "Santa Fe Chicken": {
             id: "RecommendedSantaFeChicken",
             description: "Grilled chicken breast with pepper jack, mayo on a toasted bun. With fries on the side.",
-            price: "$18.00"
+            price: "$19.00"
         },
         "Turkey or Chicken Wrap": {
             id: "RecommendedTurkeyChickenWrap",
             description: "A classic Turkey or Chicken Wrap with lettuce, avocado, tomato, and mayo. With fries on the side.",
-            price: "$18.00"
+            price: "$19.00"
         },
         "Rodeo Burger": {
             id: "RecommendedRodeoBurger",
