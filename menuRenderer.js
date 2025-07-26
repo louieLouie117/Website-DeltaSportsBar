@@ -15,11 +15,22 @@ class MenuRenderer {
 
     // Hide all menus by default
     hideAllMenus() {
-        const menuIds = [ 'breakfastMenuList', 'pizzasMenu', 'sandwichesMenu', 'appetizersMenu', 'saladsMenu', 'burgersMenu'];
+        const menuIds = [
+            'breakfastMenuList',
+            'pizzasMenu',
+            'sandwichesMenu',
+            'appetizersMenu',
+            'saladsMenu',
+            'burgersMenu'
+        ];
+
+        // Check screen width to determine behavior
+        const isDesktop = window.innerWidth >= 1024; // Adjust breakpoint as needed
+
         menuIds.forEach(id => {
             const element = document.getElementById(id);
             if (element) {
-                element.style.display = "none";
+                element.style.display = isDesktop ? "grid" : "none";
             }
         });
     }
