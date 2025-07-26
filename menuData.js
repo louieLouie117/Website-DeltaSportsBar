@@ -137,20 +137,20 @@ const menuData = {
             description: "Tender Sliced Prime Rib on top of a roll served with a side of Au Jus. with cheese +$1.00",
             price: "$18.00"
         },
-        "Delta Cheesesteak": {
+        "Delta Cheese Steak": {
             id: "SandwichDeltaCheeseSteak",
             description: "Grilled thinly sliced Beef, Steak or Chicken with grilled onion and bell peppers, topped with jack cheese.",
-            price: "$16.00"
+            price: "$18.00"
         },
         "Delta BLT": {
             id: "SandwichDeltaBLT",
             description: "Crispy bacon, lettuce, tomato and mayonnaise on toasted white or wheat bread.",
             price: "$14.00"
         },
-        "Delta Club": {
+        "Club": {
             id: "SandwichDeltaClub",
-            description: "Triple Decker Sandwich of sliced ham, turkey, bacon, lettuce, tomato, mayonnaise on toasted white or wheat bread.",
-            price: "$16.00"
+            description: "Triple Decker Sandwich of sliced ham, turkey, bacon, lettuce, tomato, mayonnaise on toasted white or wheat bread. add avocado for $3.00",
+            price: "$18.00"
         },
         "Ruben": {
             id: "SandwichRuben",
@@ -167,6 +167,11 @@ const menuData = {
             description: "Tender steak sandwich served with fries.",
             price: "$20.00"
         },
+        "Santa Fe Chicken": {
+            id: "SandwichSantaFeChicken",
+            description: "Grilled chicken breast with pepper jack, mayo on a toasted bun. With fries on the side.",
+            price: "$18.00"
+        },
         "Turkey Bacon Avocado Wrap": {
             id: "SandwichTurkeyBaconAvocadoWrap",
             description: "A classic Turkey Wrap with bacon and avocado.",
@@ -180,15 +185,21 @@ const menuData = {
         "Fish & Chips": {
             id: "SandwichFishChips",
             description: "Beer batter fried cod served with fries.",
-            price: "$19.00"
-        }
+            price: "Lunch (3) $19.00 Dinner (4) $23.00"
+        },
+        "Turkey or Chicken Wrap": {
+            id: "SandwichTurkeyChickenWrap",
+            description: "A classic Turkey or Chicken Wrap with lettuce, avocado, tomato, and mayo. With fries on the side.",
+            price: "$18.00"
+        },
+
     },
 
     appetizers: {
         "Delta Indian Roll": {
             id: "AppetizerDeltaIndianRoll",
             description: "Grilled butter chicken warp (available in spicy upon request)",
-            price: "$10.00"
+            price: "$16.00"
         },
         "Spinach & Artichoke Dip": {
             id: "AppetizerSpinachArtichokeDip",
@@ -248,7 +259,7 @@ const menuData = {
         "Chicken Tenders": {
             id: "AppetizerChickenTenders",
             description: "Breaded chicken tenders with fries.",
-            price: "$14.00"
+            price: "$15.00"
         },
         "French Fries": {
             id: "AppetizerFrenchFries",
@@ -259,6 +270,11 @@ const menuData = {
             id: "AppetizerTots",
             description: "Crispy tater tots served with your choice of dipping sauce.",
             price: "$11.00"
+        },
+        "Loaded Tater Tots": {
+            id: "AppetizerLoadedTaterTots",
+            description: "Tater tots topped with cheese, bacon, and green onions.",
+            price: "$14.00"
         },
         "Garlic Fries": {
             id: "AppetizerGarlicFries",
@@ -291,10 +307,15 @@ const menuData = {
     },
 
     burgers: {
-        "Classic Burger": {
+        "Cheese Burger": {
             id: "burgerItem2",
-            description: "Classic burger with lettuce, tomatoes, onion and pickles. Add cheese $2.00",
-            price: "$13.00"
+            description: "Classic burger with lettuce, tomatoes, onion, pickles and cheese. With fries on the side.",
+            price: "$16.00"
+        },
+        "Hot Pastrami": {
+            id: "burgerItem6",
+            description: "Hot pastrami Provolone, and mustard on grilled rye bread. With fries on the side.",
+            price: "$16.00"
         },
         "Patty Melt": {
             id: "burgerItem1",
@@ -308,13 +329,13 @@ const menuData = {
         },
         "Rodeo Burger": {
             id: "burgerItem4",
-            description: "Grilled beef patty topped with crispy bacon, fried onion strings, cheddar cheese and bbq sauce.",
-            price: "$17.00"
+            description: "Grilled beef patty topped with crispy bacon, fried onion strings, cheddar cheese and bbq sauce. With fries on the side.",
+            price: "$19.00"
         },
         "Veggie Burger": {
             id: "burgerItem5",
             description: "Looking for veggie burger patty that does not contain meat and has all the great taste. + cheese $1.00 or + avocado for $1.50",
-            price: "$15.00"
+            price: "$17.00"
         }
     }
 };
