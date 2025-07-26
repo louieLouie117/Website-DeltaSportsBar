@@ -193,7 +193,7 @@ const menuData = {
         "Spinach & Artichoke Dip": {
             id: "AppetizerSpinachArtichokeDip",
             description: "Get our spinach and artichoke dip served with tortilla chips or bread.",
-            price: "$14.00"
+            price: "$19.00"
         },
         "BBQ Pulled Pork Sliders": {
             id: "AppetizerBBQPulledPorkSliders",
@@ -203,7 +203,12 @@ const menuData = {
         "BBQ Pulled Pork Nachos": {
             id: "AppetizerBBQPulledPorkNachos",
             description: "Tender slow-roasted pork. Served over tortilla chips, garnished with green onions, tomatoes, olives, jalapenos, cheese and sour cream.",
-            price: "$14.00"
+            price: "$16.00"
+        },
+        "Quesadilla": {
+            id: "AppetizerQuesadilla",
+            description: "Flour tortilla filled with cheese and your choice of chicken or beef. add beef, chicken, or pulled pork for + $4.00",
+            price: "$11.00"
         },
         "Mozzarella Sticks": {
             id: "AppetizerMozzarellaSticks",
@@ -213,17 +218,17 @@ const menuData = {
         "Onion Rings": {
             id: "AppetizerOnionRings",
             description: "Handed breaded onion rings",
-            price: "$11.00"
+            price: "$13.00"
         },
         "Potato Skins": {
             id: "AppetizerPotatoSkins",
             description: "Served with bacon, cheese, green onions and sour cream.",
-            price: "$12.00"
+            price: "$14.00"
         },
         "Jalapeno Poppers": {
             id: "AppetizerJalapenoPoppers",
             description: "Cheddar or cream cheese.",
-            price: "$10.00"
+            price: "$11.00"
         },
         "Stuffed Mushrooms": {
             id: "AppetizerStuffedMushrooms",
@@ -238,7 +243,7 @@ const menuData = {
         "Chicken Wings": {
             id: "AppetizerChickenWings",
             description: "Ge our 5 peace chicken wings smothered in your choice of sauce Buffalo, BBQ, Sweet Chile, Golden Serrano BBQ, or Teriyaki. Full order of 10 peace available form 13.00.",
-            price: "Half Order (5) $10.00<br>Fill Order (10) $15.00"
+            price: "Half Order (5) $11.00<br>Fill Order (10) $17.00"
         },
         "Chicken Tenders": {
             id: "AppetizerChickenTenders",
@@ -247,8 +252,18 @@ const menuData = {
         },
         "French Fries": {
             id: "AppetizerFrenchFries",
-            description: "Home style seasoned or garlic fires. Make them garlic or curly fries for $2.00+",
-            price: "$10.00"
+            description: "Home style seasoned fires.",
+            price: "$11.00"
+        },
+        "Tots": {
+            id: "AppetizerTots",
+            description: "Crispy tater tots served with your choice of dipping sauce.",
+            price: "$11.00"
+        },
+        "Garlic Fries": {
+            id: "AppetizerGarlicFries",
+            description: "Home style garlic fries.",
+            price: "$12.00"
         }
     },
 
