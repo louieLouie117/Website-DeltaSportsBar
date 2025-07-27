@@ -242,11 +242,7 @@ const menuData = {
             description: "A classic Turkey Wrap with bacon and avocado.",
             price: "$17.00"
         },
-        "Fried Shrimp Basket": {
-            id: "SandwichFriedShrimpBasket",
-            description: "Fried Shrimp Basket. Seafood delight.",
-            price: "$15.00"
-        },
+       
         "Fish & Chips": {
             id: "SandwichFishChips",
             description: "Beer batter fried cod served with fries.",
@@ -271,11 +267,7 @@ const menuData = {
             description: "Get our spinach and artichoke dip served with tortilla chips or bread.",
             price: "$19.00"
         },
-        "BBQ Pulled Pork Sliders": {
-            id: "AppetizerBBQPulledPorkSliders",
-            description: "Tender slow-roasted pork on slider buns with barbecue sauce.",
-            price: "$13.00"
-        },
+       
         "BBQ Pulled Pork Nachos": {
             id: "AppetizerBBQPulledPorkNachos",
             description: "Tender slow-roasted pork. Served over tortilla chips, garnished with green onions, tomatoes, olives, jalapenos, cheese and sour cream.",
