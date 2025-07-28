@@ -197,11 +197,7 @@ const menuData = {
     },
 
     sandwiches: {
-        "Prime Rib Dip": {
-            id: "SandwichPrimeRibDip",
-            description: "Tender Sliced Prime Rib on top of a roll served with a side of Au Jus. with cheese +$1.00",
-            price: "$18.00"
-        },
+    
         "Delta Cheese Steak": {
             id: "SandwichDeltaCheeseSteak",
             description: "Grilled thinly sliced Beef, Steak or Chicken with grilled onion and bell peppers, topped with jack cheese.",
@@ -217,16 +213,8 @@ const menuData = {
             description: "Triple Decker Sandwich of sliced ham, turkey, bacon, lettuce, tomato, mayonnaise on toasted white or wheat bread. add avocado for $3.00",
             price: "$18.00"
         },
-        "Ruben": {
-            id: "SandwichRuben",
-            description: "Corned beef, Sauerkraut, thousand island dressing and jack cheese on rye bread.",
-            price: "$16.00"
-        },
-        "Bacon & Ranch Chicken": {
-            id: "SandwichBaconRanchChicken",
-            description: "Grilled or breaded and fried chicken breast topped with bacon and ranch dressing and served on a bun.",
-            price: "$17.00"
-        },
+       
+    
         "Ribeye Steak Sandwich": {
             id: "SandwichRibeyeSteak",
             description: "Tender steak sandwich served with fries.",
